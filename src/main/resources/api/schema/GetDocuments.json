@@ -1,0 +1,74 @@
+{
+  "properties": {
+    "current_page": {
+      "type": "integer"
+    },
+    "items": {
+      "items": {
+        "properties": {
+          "created": {
+            "type": "integer"
+          },
+          "folder": {
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "id"
+            ],
+            "type": "object"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "updated": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "id",
+          "type",
+          "folder",
+          "created",
+          "name",
+          "updated"
+        ],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "next_page_url": {
+      "type": "string"
+    },
+    "per_page": {
+      "type": "integer"
+    },
+    "prev_page_url": {
+      "type": "string"
+    },
+    "total": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "next_page_url",
+    "total",
+    "per_page",
+    "prev_page_url",
+    "current_page",
+    "items"
+  ],
+  "type": "object"
+}

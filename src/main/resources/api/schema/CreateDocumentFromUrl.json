@@ -1,0 +1,43 @@
+{
+  "properties": {
+    "created": {
+      "type": "integer"
+    },
+    "folder": {
+      "properties": {
+        "id": {
+          "type": "integer"
+        },
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "id"
+      ],
+      "type": "object"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "updated": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "id",
+    "type",
+    "folder",
+    "created",
+    "name",
+    "updated"
+  ],
+  "type": "object"
+}
